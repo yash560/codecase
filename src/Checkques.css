@@ -1,0 +1,77 @@
+.quescard {
+  width: 80%;
+  min-height: 200px;
+  max-height: fit-content;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 3rem;
+  border-radius: 10px;
+  background-color: rgb(238, 238, 238);
+}
+.quesflex {
+  display: flex;
+  flex-direction: row;
+}
+.queswrap {
+  display: flex;
+  flex-direction: row;
+}
+.quescard_left,
+.quescard_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  height: 100%;
+}
+.deleteFeed {
+  position: absolute;
+  word-wrap: break-word !important;
+  background-color: rgb(226, 77, 77);
+  right: -15px;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: x-small;
+  border-radius: 10px;
+  color: white;
+  top: -10px;
+}
+.deletereq {
+  position: absolute;
+  word-wrap: break-word !important;
+  background-color: green;
+  right: -15px;
+  padding: 0.5rem;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: x-small;
+  border-radius: 10px;
+  top: -10px;
+}
+.fas {
+  color: white;
+}
+@media (max-width: 500px) {
+  .quescard {
+    width: 95%;
+  }
+}
+@media (max-width: 592px) {
+  .quescard {
+    width: 80%;
+    min-height: 200px;
+    max-height: fit-content;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 5rem;
+    border-radius: 10px;
+    background-color: rgb(238, 238, 238);
+  }
+}

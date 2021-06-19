@@ -1,0 +1,120 @@
+.Aboutrow {
+  display: flex;
+}
+.skillCard {
+  height: 400px;
+  width: 500px;
+  flex-direction: column;
+  display: flex;
+  overflow-y: scroll;
+  margin: 0 1rem;
+  place-items: center;
+  position: relative;
+  z-index: 100;
+  background-color: rgb(177, 189, 219);
+}
+.AboutDivision {
+  height: 400px;
+  width: 10px;
+  background-color: transparent;
+}
+.About_small_cards {
+  position: relative;
+  z-index: -1;
+  display: flex;
+  place-items: center;
+  padding: 0 25px;
+  white-space: nowrap;
+  height: 50px;
+  width: 200px;
+  font-size: 16px;
+  text-decoration: none !important;
+  color: white;
+  line-height: 50px;
+  border-radius: 25px;
+  margin: 1rem;
+  background-color: rgb(8, 46, 82);
+  animation: slide 1s;
+  animation-iteration-count: 1;
+}
+@keyframes slide {
+  from {
+    bottom: -800px;
+  }
+  to {
+    bottom: 400px;
+  }
+}
+.SkillsDiv {
+  display: flex;
+
+  flex-direction: row;
+}
+.dark .hoverEducation {
+  background-color: black;
+}
+.hoverEducation {
+  position: sticky;
+  font-size: 3rem;
+  left: 0%;
+  padding: 10rem 7rem;
+  background-color: rgb(174, 185, 212);
+  top: 0%;
+}
+.skillCard:hover .hoverEducation {
+  opacity: 0;
+  content: "Scroll Down";
+}
+.skillCard:hover .con {
+  position: absolute;
+}
+.dark .hoverSkills {
+  background-color: black;
+}
+.hoverSkills {
+  position: sticky;
+  font-size: 5rem;
+  left: 0%;
+  padding: 9rem 10rem;
+  background-color: rgb(174, 185, 212);
+  top: 0%;
+}
+.skillCard:hover .hoverSkills {
+  opacity: 0;
+}
+.educationContaier {
+  width: 80%;
+  height: fit-content;
+  margin: 1rem;
+  background-color: transparent;
+  border-bottom: 1px solid gray;
+  padding-bottom: 1rem;
+}
+.educationHeader {
+  font-size: x-large;
+}
+@media (max-width: 1100px) {
+  .Aboutrow {
+    flex-direction: column;
+  }
+}
+@media (max-width: 580px) {
+  .skillCard {
+    width: 250px;
+    margin: 0;
+  }
+  .SkillsDiv {
+    flex-direction: column;
+  }
+  .hoverEducation {
+    position: sticky;
+    font-size: 2rem;
+    left: 0%;
+    padding: 11rem 7rem;
+    background-color: rgb(174, 185, 212);
+    top: 0%;
+  }
+}
+.dark .skillCard {
+  background-color: transparent;
+}

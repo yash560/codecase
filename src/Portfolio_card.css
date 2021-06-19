@@ -1,0 +1,126 @@
+.Portfolio_card {
+  height: 300px;
+  width: 300px;
+  /* display: grid;
+  place-items: center; */
+  margin: 0.5rem;
+  animation: FadeInAnimation 3s;
+  animation-iteration-count: 1;
+  border-radius: 1rem;
+}
+.Portfolio_card:hover {
+  background-color: rgb(93, 158, 196);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+html {
+  text-decoration: none;
+}
+.imagePortfolio {
+  border-radius: 20px;
+
+  width: 270px;
+}
+.imageCards {
+  height: 150px;
+  display: grid;
+  place-items: center;
+  margin: 1rem auto;
+  width: 90%;
+
+  border-radius: 20px;
+  background-color: white;
+}
+.dark .CatagoriesCard {
+  color: white;
+  text-decoration: underline rgb(0, 0, 0) !important;
+}
+.CatagoriesCard {
+  height: 200px;
+  margin: 1rem;
+  border: 2px dotted white;
+  width: 200px;
+  text-decoration: underline rgb(174, 185, 212) !important;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: black;
+  background-color: transparent;
+  text-align: center;
+}
+.CatagoriesCard:in-range {
+  text-decoration: none;
+}
+.CatagoriesCard:hover {
+  border: 5px dotted white;
+  text-decoration: black;
+  background-color: transparent;
+}
+
+.Portfolio_card_Text {
+  margin: auto;
+  margin-left: 1.5rem;
+}
+.card_button {
+  padding: 0.3rem 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: fit-content;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 20px;
+}
+.card_button:hover {
+  background-color: black;
+  color: wheat;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 1100px) {
+  .Portfolio_card {
+    height: 300px;
+    width: 400px;
+  }
+  .imagePortfolio {
+    width: 350px;
+  }
+}
+@media (max-width: 879px) {
+  .Portfolio_card {
+    height: 300px;
+    width: 300px;
+  }
+  .imagePortfolio {
+    width: 270px;
+  }
+}
+@media (max-width: 698px) {
+  .Portfolio_card {
+    height: 300px;
+    width: 500px;
+  }
+  .imagePortfolio {
+    width: 450px;
+  }
+}
+@media (max-width: 571px) {
+  .Portfolio_card {
+    height: 300px;
+    width: 400px;
+  }
+  .imagePortfolio {
+    width: 350px;
+  }
+}
+
+@media (max-width: 459px) {
+  .Portfolio_card {
+    height: 300px;
+    width: 300px;
+  }
+  .imagePortfolio {
+    width: 270px;
+  }
+}
